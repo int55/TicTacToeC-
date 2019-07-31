@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>tabl1.jpg</file>
+        <file>ButtonGame.qml</file>
+        <file>cross.jpg</file>
+        <file>null.jpg</file>
+        <file>firstW.jpg</file>
+        <file>secondW.jpg</file>
+    </qresource>
+</RCC>
