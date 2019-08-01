@@ -8,24 +8,18 @@
 class TicTacToe: public QObject
 {
     Q_OBJECT
-public:
+public: 
     TicTacToe(QObject * parent= 0);
-    void logikButton123();
-    void logikButton456();
-    void logikButton789();
+    void logikButton();
 signals:
     void signalCross();
-    void signalNull();
+    void signalNull(); 
 public slots:
-    void setCounter123(int mCounter1, int mIndexArray);
-    void setCounter456(int mCounter1, int mIndexArray);
-    void setCounter789(int mCounter1, int mIndexArray);
-//    void setCounter8(int mCounter1);
-//    void setCounter9(int mCounter1);
-
+    void setCounter(int Counter1, int IndexArray);
 private:
-        int counter1;
+        int m_Counter1;
         QList<int>array;
+
 };
 
 #endif // TICTACTOE_H

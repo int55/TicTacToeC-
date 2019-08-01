@@ -22,7 +22,7 @@ Grid{
                 count++
                 temp1=count
                 indexArray=0
-                gameLog.setCounter123(count, indexArray)
+                gameLog.setCounter(count, indexArray)
                 enabled = false
             }
         }
@@ -44,7 +44,7 @@ Grid{
                 count++
                 temp2=count
                 indexArray=1
-                gameLog.setCounter123(count, indexArray)
+                gameLog.setCounter(count, indexArray)
                 enabled = false
             }
         }
@@ -65,7 +65,7 @@ Grid{
                 count++
                 temp3 = count
                 indexArray=2
-                gameLog.setCounter123(count, indexArray)
+                gameLog.setCounter(count, indexArray)
                 enabled = false
             }
         }
@@ -86,7 +86,7 @@ Grid{
                 count++
                 temp4 = count
                 indexArray=3
-                gameLog.setCounter456(count, indexArray)
+                gameLog.setCounter(count, indexArray)
                 enabled = false
             }
         }
@@ -107,7 +107,7 @@ Grid{
                 count++
                 temp5 = count
                 indexArray=4
-                gameLog.setCounter456(count, indexArray)
+                gameLog.setCounter(count, indexArray)
                 enabled = false
             }
         }
@@ -128,7 +128,7 @@ Grid{
                 count++
                 temp6=count
                 indexArray=5
-                gameLog.setCounter456(count, indexArray)
+                gameLog.setCounter(count, indexArray)
                 enabled = false
             }
         }
@@ -149,7 +149,7 @@ Grid{
                 count++
                 temp7 = count
                 indexArray=6
-                gameLog.setCounter789(count, indexArray)
+                gameLog.setCounter(count, indexArray)
                 console.log(indexArray)
                 enabled = false
             }
@@ -171,7 +171,7 @@ Grid{
                 count++
                 temp8=count
                 indexArray=7
-                gameLog.setCounter789(count, indexArray)
+                gameLog.setCounter(count, indexArray)
                 enabled = false
             }
         }
@@ -193,7 +193,7 @@ Grid{
                 count++
                 temp9=count
                 indexArray=8
-                gameLog.setCounter789(count, indexArray)
+                gameLog.setCounter(count, indexArray)
                 enabled = false
             }
         }

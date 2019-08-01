@@ -51,7 +51,7 @@ Window {
             anchors.horizontalCenter: parent.horizontalCenter
             source: "firstW.jpg"
             visible: false
-        }
+        }//---------FirstWin-------
         Image {
             id: imgSecondWin
             height: 25 ; width: parent.width/2
@@ -59,7 +59,7 @@ Window {
             anchors.horizontalCenter: parent.horizontalCenter
             source: "secondW.jpg"
             visible: false
-        }
+        }//-------SecondWin--------
 
         Image {
             id: tabl1

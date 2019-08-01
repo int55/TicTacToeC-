@@ -7,29 +7,10 @@ TicTacToe::TicTacToe(QObject *parent): QObject (parent){
     }
 }
 
-void TicTacToe::setCounter123(int mCounter1, int mIndexArray)
+void TicTacToe::setCounter(int Counter1, int IndexArray)
 {
-    counter1 =mCounter1;
-    array[mIndexArray]= counter1;
-    qDebug()<< "array[mIndexArr]="<< array[mIndexArray];
-    logikButton123();
+    m_Counter1 =Counter1;
+    array[IndexArray]= m_Counter1;
+    //qDebug()<< "array[IndexArr]="<< array[IndexArray];
+    logikButton();
 } //-----------button 1-2-3--------------
-
-
-void TicTacToe::setCounter456(int mCounter1, int mIndexArray)
-{
-    counter1 =mCounter1;
-    array[mIndexArray]=counter1;
-     qDebug()<< "array[mIndexArr]="<< array[mIndexArray];
-    logikButton456();
-} // -----------button 4-5-6------------
-
-
-void TicTacToe::setCounter789(int mCounter1, int mIndexArray)
-{
-    counter1 =mCounter1;
-    array[mIndexArray]=counter1;
-    qDebug()<< "array[mIndexArr]="<< array[mIndexArray];
-    logikButton789();
-} //------------button 7-8-9------------
-

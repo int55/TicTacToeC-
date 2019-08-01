@@ -5,9 +5,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp \
     tictactoe.cpp \
-    logikbutton456.cpp \
-    logikbutton789.cpp \
-    logikButton123.cpp
+    logikButton.cpp
 
 RESOURCES += qml.qrc
 
