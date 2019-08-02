@@ -19,8 +19,8 @@ Window {
     property int temp7: 0
     property int temp8: 0
     property int temp9: 0
-    property bool gameOver: false
 
+    property bool isWin: true
     GameLogik{
         id: gameLog
     }//-----------c++--------
@@ -29,37 +29,22 @@ Window {
         target: gameLog
         onSignalCross: {
             imgFirstWin.visible=true
-            gameOver=true
+            isWin=true
         }
     }//------signalCross-----
 
     Connections{
         target: gameLog
         onSignalNull: {
-            imgSecondWin.visible=true
-            gameOver=true
+            //imgSecondWin.visible=true
+            imgFirstWin.visible=true
+            isWin=false
+
         }
     }//------signalNull------
 
     Rectangle{
         anchors.fill: parent
-
-        Image {
-            id: imgFirstWin
-            height: 25 ; width: parent.width/2
-            anchors.top: tabl1.bottom
-            anchors.horizontalCenter: parent.horizontalCenter
-            source: "firstW.jpg"
-            visible: false
-        }//---------FirstWin-------
-        Image {
-            id: imgSecondWin
-            height: 25 ; width: parent.width/2
-            anchors.top: tabl1.bottom
-            anchors.horizontalCenter: parent.horizontalCenter
-            source: "secondW.jpg"
-            visible: false
-        }//-------SecondWin--------
 
         Image {
             id: tabl1
@@ -69,6 +54,17 @@ Window {
             ButtonGame {
             }
         }// -----Image-----------
+
+        Image {
+            id: imgFirstWin
+            height: 25 ; width: parent.width/2
+            anchors.top: tabl1.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            source: (isWin == true)? "firstW.jpg": "secondW.jpg"
+            visible: false
+        }//---------FirstWin-------
+
+
     }//-----Rectangle--------
 } // -------Window-----------
 
